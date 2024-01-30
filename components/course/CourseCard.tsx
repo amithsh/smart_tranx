@@ -4,9 +4,9 @@ import StarRating from "./Rating";
 export interface CourseCardProps {
   title: string;
   description: string;
-  instructor: string;
+  instructor?: string;
   rating: string;
-  category: string;
+  category?: string;
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({
@@ -21,13 +21,13 @@ const CourseCard: React.FC<CourseCardProps> = ({
       <div className="ml-[20px] mt-4 flex flex-row justify-between">
         <div className="flex flex-col">
           <h1 className="font-medium text-xl">{title}</h1>
-          <h3 className="font-medium text-sm opacity-75">{description}</h3>
+          <h3 className="font-medium text-sm opacity-75 mt-3">{description}</h3>
         </div>
-        <h1 className="font-normal mr-9 mt-4 flex flex-row items-center gap-2">Rating:- <StarRating rating={rating} /></h1>
+        <h1 className="font-normal mr-5 mt-4 flex flex-row items-center gap-2">Rating:- <StarRating rating={rating} /></h1>
       </div>
       <div className="flex flex-row items-center justify-between">
         <h1 className="text-sm ml-4 ">
-          Instructor :- <span className="text-sm font-bold">{instructor}</span>
+          
         </h1>
         <div className=" w-48 h-8 relative flex items-center justify-center">
           <span className="text-white font-normal absolute ">{category}</span>

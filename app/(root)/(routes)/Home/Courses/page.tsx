@@ -5,8 +5,8 @@ import Allcourses from './components/Allcourses'
 
 
 interface coursepageProps{
-    title:"banner",
-    url:"/coursespage.png"
+    title?:string,
+    url?:string
 }
 const page:React.FC<coursepageProps> = ({
    url,title

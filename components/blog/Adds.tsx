@@ -32,8 +32,8 @@ const add = [
 
 
 interface  AddProps {
-  title:string,
-  url:string
+  title?:string,
+  url?:string
 }
 const Adds:React.FC<AddProps> = ({
   title,
