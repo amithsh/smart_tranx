@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
@@ -9,6 +9,8 @@ import Keyfeatures from "./components/Keyfeatures";
 import Courseagenda from "./components/Courseagenda";
 import Faq from "./components/Faq";
 import Benifits_cards from "@/components/Benifits_cards";
+import SheduleForm from "@/components/SheduleForm";
+import { cn } from "@/lib/utils";
 
 const Page = () => {
   const path = usePathname();
@@ -17,8 +19,9 @@ const Page = () => {
   const [selectedSection, setSelectedSection] = useState("Overview");
   const [isSticky, setIsSticky] = useState(false);
   const sectionRef = useRef(null);
+  const formRef = useRef(null);
 
-  const handleSectionChange = (section:any) => {
+  const handleSectionChange = (section: any) => {
     setSelectedSection(section);
   };
 
@@ -88,8 +91,10 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-10 justify-center">
-            <h1 className="text-4xl font-bold">Benifits of <span className="text-orange-500">Smart Tranx</span></h1>
-            <Benifits_cards />
+          <h1 className="text-4xl font-bold">
+            Benifits of <span className="text-orange-500">Smart Tranx</span>
+          </h1>
+          <Benifits_cards />
         </div>
         <div className="sticky flex flex-col top-0 z-10 mt-14 bg-white">
           <NavBar
@@ -97,16 +102,28 @@ const Page = () => {
             onSectionChange={handleSectionChange}
           />
           <Separator className="mt-2 max-w-[1000px]" />
-          </div>
-          <div ref={sectionRef}>
+        </div>
+        <div ref={sectionRef}  className="flex ">
           <Section selectedSection={selectedSection} />
+          {/* <div className="sticky top-0 right-0 mt-14">
+            <SheduleForm
+              title="Project Management Techniques certification training"
+              duration="4 days"
+            />
+          </div> */}
+         <div ref={formRef}  className={`fixed top-0 right-0 mt-14 ${isSticky ? '' : 'relative'}`}>
+            <SheduleForm
+              title="Project Management Techniques certification training"
+              duration="4 days"
+            />
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-const NavBar = ({ selectedSection, onSectionChange }:any) => {
+const NavBar = ({ selectedSection, onSectionChange }: any) => {
   const sections = ["Overview", "Keyfeatures", "Courseagenda", "Faqs"];
 
   return (
@@ -126,22 +143,23 @@ const NavBar = ({ selectedSection, onSectionChange }:any) => {
   );
 };
 
-const Section = ({ selectedSection }:any) => {
-  
+const Section = ({ selectedSection }: any) => {
   const contentMap = {
     Overview: <Overview />,
     Keyfeatures: <Keyfeatures />,
     Courseagenda: <Courseagenda />,
-    Faqs: <Faq />
+    Faqs: <Faq />,
   };
 
-  return <div>
-    {contentMap[selectedSection]}
-    {/* <Overview />
+  return (
+    <div>
+      {contentMap[selectedSection]}
+      {/* <Overview />
     <Keyfeatures />
     <Courseagenda />
     <Faq /> */}
-    </div>;
+    </div>
+  );
 };
 
 export default Page;
