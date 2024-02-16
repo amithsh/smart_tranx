@@ -1,26 +1,17 @@
-import Adds from '@/components/blog/Adds'
-import Image from 'next/image'
-import React from 'react'
-import Allcourses from './components/Allcourses'
+import Adds from "@/components/blog/Adds";
+import Image from "next/image";
+import React from "react";
+import Allcourses from "./components/Allcourses";
 
-
-interface coursepageProps{
-    title?:string,
-    url?:string
-}
-const page:React.FC<coursepageProps> = ({
-   url,title
-}) => {
+const page = ({}) => {
   return (
-    <div className='h-auto w-full '>
-        <div  className=''>
-             <Adds url={url} title={title} />
-        </div>
-
-        <Allcourses />
-       
+    <div className="h-auto w-full ">
+      <div className="flex items-center justify-center">
+          <h1 className="font-semibold text-2xl p-3">Explore our Courses</h1>
+      </div>
+      <Allcourses />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

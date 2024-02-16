@@ -8,7 +8,7 @@ import ResoursersPopover from "./course/ResoursersPopover";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 flex flex-row items-center justify-between bg-orange-50 shadow-xl">
+    <div className="w-full h-20 flex flex-row items-center justify-between  bg-orange-50 shadow-xl">
       <div className="flex items-center justify-center px-14">
         <Link href={"/"}>
           <Image src={"/logo.png"} alt="logo" width={185} height={92} />
