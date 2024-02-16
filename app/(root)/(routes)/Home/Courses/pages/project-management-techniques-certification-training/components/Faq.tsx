@@ -35,7 +35,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-4 p-6 max-w-[1000px]">
+    <div className="flex flex-col mt-4 p-6 max-w-[1000px]  min-w-[1000px]">
       <h1 className="text-2xl font-bold">Course Agenda</h1>
       <h2 className="opacity-75 mt-4">
         Syllabus of Project Management Techniques Certification Training

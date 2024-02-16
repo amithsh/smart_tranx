@@ -11,6 +11,7 @@ import Faq from "./components/Faq";
 import Benifits_cards from "@/components/Benifits_cards";
 import SheduleForm from "@/components/SheduleForm";
 import { cn } from "@/lib/utils";
+import Contactus_card from "@/components/Contactus_card";
 
 const Page = () => {
   const path = usePathname();
@@ -103,7 +104,7 @@ const Page = () => {
           />
           <Separator className="mt-2 max-w-[1000px]" />
         </div>
-        <div ref={sectionRef}  className="flex ">
+        <div ref={sectionRef} className="flex ">
           <Section selectedSection={selectedSection} />
           {/* <div className="sticky top-0 right-0 mt-14">
             <SheduleForm
@@ -111,14 +112,21 @@ const Page = () => {
               duration="4 days"
             />
           </div> */}
-         <div ref={formRef}  className={`fixed top-0 right-0 mt-14 ${isSticky ? '' : 'relative'}`}>
+          <div
+            ref={formRef}
+            className={`fixed top-0 right-0 mt-14 ml-14 ${
+              isSticky ? "relative" : "relative"
+            }`}
+          >
             <SheduleForm
               title="Project Management Techniques certification training"
               duration="4 days"
             />
           </div>
         </div>
+        <Contactus_card />
       </div>
+      
     </div>
   );
 };
