@@ -12,37 +12,37 @@ const pmpcontent = [
     {
         courseImage: "/coursespage.png",
         coursetitle: "Change Management Certification training",
-        courseurl: "change-management-certification-training"
+        courseurl: "Change-Management-Certification-training"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "Certified Scrum Master",
-        courseurl: "certified-scrum-master"
+        courseurl: "Certified-Scrum-Master"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "PMP training",
-        courseurl: "pmp-training"
+        courseurl: "PMP-certification-course"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "CAPM Certification Course",
-        courseurl: "capm-certification-course"
+        courseurl: "Certified-Associate-in-Project-Management"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "Lean Six Sigma Green Belt",
-        courseurl: "lean-six-sigma-green-belt"
+        courseurl: "Lean-Six-Sigma-Green-Belt-training"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "PMI-ACP Certification",
-        courseurl: "pmi-acp-certification"
+        courseurl: "PMI-ACP-Certification"
     },
     {
         courseImage: "/coursespage.png",
         coursetitle: "ITIL certification course",
-        courseurl: "itil-certification-course"
+        courseurl: "ITIL-certification-course"
     }
 ];
 

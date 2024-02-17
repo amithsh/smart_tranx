@@ -37,8 +37,8 @@ const Testimonialcarousal = () => {
 
   return (
 
-    <section className="flex items-center justify-center h-auto">
-    <Swiper
+    <section className="flex items-center justify-center gap-14 h-auto">
+    {/* <Swiper
       spaceBetween={50}
       
       slidesPerView={3}
@@ -52,17 +52,18 @@ const Testimonialcarousal = () => {
       
       
     >
-      {testimonies.map((item) => (
-        <SwiperSlide key={item.id}>
-          <TestimonialCard
-            name={item.title}
-            designation={item.description}
-            company={item.instructor}
-            message={item.message}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      
+    </Swiper> */}
+    {testimonies.map((item) => (
+      
+      <TestimonialCard
+        name={item.title}
+        designation={item.description}
+        company={item.instructor}
+        message={item.message}
+      />
+   
+  ))}
     
   </section>
     

@@ -29,7 +29,7 @@ const Carousel = () => {
       rating: "4.6",
       description:
         "Master essential Project Management techniques with our specialized training.",
-      url: "projectmanagementtechniques-certification", // Slug for the actual URL
+      url: "", // Slug for the actual URL
     },
     {
       name: "PMI-ACP® Certification",
@@ -71,13 +71,18 @@ const Carousel = () => {
   return (
     <section className="flex items-center justify-center">
       <Swiper
-        spaceBetween={-200}
+        spaceBetween={-10}
         slidesPerView={2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        autoplay={{
+          delay: 100,
+          disableOnInteraction: false, // This ensures autoplay continues even if user interacts with slides
+        }}
         pagination={{
           clickable: true,
         }}
+        
         modules={[Pagination]}
         className="h-80"
       >

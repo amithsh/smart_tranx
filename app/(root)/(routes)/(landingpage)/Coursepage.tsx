@@ -19,9 +19,9 @@ const Coursepage = () => {
           <h3 className="text-[24px] opacity-85 text-slate-800">
             Get certified by the authorised certification bodies
           </h3>
-          <button className="w-40 h-8 bg-sky-500 rounded-md mt-[-70px]  mr-14   hover:bg-orange-500 transition-all transform hover:scale-105  ">
+          <button className="w-40 h-8 bg-sky-500 rounded-md mt-[-70px] min-h-[50px] min-w-[200px] text-white hover:text-black mr-14 shadow-xl  hover:bg-orange-500  transition-all transform hover:scale-105  ">
             <Link href={"/Home/Courses"}>
-              <span className="text-white">Explore all Courses</span>
+              <span className="">Explore all Courses</span>
             </Link>
             
           </button>

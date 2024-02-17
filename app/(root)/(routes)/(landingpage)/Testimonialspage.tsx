@@ -21,7 +21,7 @@ const Testimonialspage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5 mb-10  ml-5">
+      <div className="mt-8">
         <Testimonialcarousal />
       </div>
     </>

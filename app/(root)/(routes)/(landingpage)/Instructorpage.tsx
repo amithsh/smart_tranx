@@ -8,7 +8,7 @@ const Instructorpage = () => {
 
 
   return (
-    <div className='w-full h-auto pt-5 pb-5 '>
+    <div className='w-full h-auto pt-5 pb-5 mt-10 '>
         <div className='flex items-center justify-center mb-10'><h1 className='font-medium text-3xl'>Our Instructors</h1></div>
         <div className='bg-orange-100 w-full h-[300px] flex items-center justify-center gap-12'>
 
