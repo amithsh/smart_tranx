@@ -11,7 +11,7 @@ const pmpcontent = [
     },
     {
         courseImage: "/coursespage.png",
-        coursetitle: "Change Management Certification training",
+        coursetitle: "Management Certification training",
         courseurl: "Change-Management-Certification-training"
     },
     {

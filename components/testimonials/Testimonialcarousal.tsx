@@ -15,21 +15,21 @@ const Testimonialcarousal = () => {
       title: "John Doe",
       description: "Software Engineer",
       instructor: "Company XYZ",
-      message: "hello world",
+      message: "",
     },
     {
       id: 2,
       title: "Jane Smith",
       description: "Product Manager",
       instructor: "ABC Corporation",
-      message: "hello world",
+      message: "",
     },
     {
       id: 3,
       title: "Bob Johnson",
       description: "UX Designer",
       instructor: "Company ABC",
-      message: "hello world",
+      message: "",
     },
 
     // Add more courses as needed

@@ -17,11 +17,11 @@ const CourseCard: React.FC<CourseCardProps> = ({
   category,
 }) => {
   return (
-    <div className="h-[250px] w-[500px] flex flex-col justify-between border shadow-lg rounded-xl">
+    <div className="h-[310px] w-[600px] flex flex-col justify-between border shadow-lg rounded-xl">
       <div className="ml-[20px] mt-4 flex flex-row justify-between">
         <div className="flex flex-col">
-          <h1 className="font-medium text-xl">{title}</h1>
-          <h3 className="font-medium text-sm opacity-75 mt-3">{description}</h3>
+          <h1 className="font-medium text-2xl">{title}</h1>
+          <h3 className="font-medium text-lg opacity-75 mt-3 max-w-72">{description}</h3>
         </div>
         <h1 className="font-normal mr-5 mt-4 flex flex-row items-center gap-2">Rating:- <StarRating rating={rating} /></h1>
       </div>
